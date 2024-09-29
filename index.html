@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Nguyen's Website</title>
@@ -9,55 +10,136 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
+            text-align: left;
             padding: 50px;
         }
         a {
             display: block;
             margin: 20px 0;
-            font-size: 20px;
+            font-size: 18px;
             text-decoration: none;
-            color: #0066cc;
+            color: #24a9dd;
+            display: inline-block;
         }
         a:hover {
             text-decoration: underline;
         }
+        ul {
+            display: inline-block;
+            margin-top: 20px;
+        }
         h1 {
             font-size: 36px;
-            color: #333;
+            color: #3907ec;
+        }
+        h3 {
+            color: #835c07;  
+            font-size: 24px; 
+            margin-top: 20px; 
+        }
+        h4 {
+            color: #d1ac5b;  
+            font-size: 22px; 
+            margin-top: 20px; 
         }
         p {
             font-size: 18px;
             line-height: 1.6;
+        }
+        /* img {
+            margin-top: 20px;
+            width: 200px;  
+            height: 150px; 
+            /* border-radius: 50%; */
+        } */
+        li {
+            font-size: 18px;
+        }
+        .image-container {
+            display: flex; /* Flexbox for arranging images in a row */
+            justify-content: center; /* Center the images */
+            margin-top: 20px; /* Add space above the images */
+        }
+        figure {
+            margin: 0 15px; /* Space between figures */
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Max Nguyen's Personal Website</h1>
 
-    <img src="assets/image/your-image.jpg" alt="Max Nguyen">
+    <!-- Profile Picture -->
+    <figure style="text-align: left;">
+        <img src="assets/image/Nguyen_QuanHoangMinh_183.jpg" width="160" height="200" alt="Max Nguyen">
+    </figure>
+
+    <p>Hi, I'm Max Nguyen, a Master's student in Computer Science at the University of Nebraska-Lincoln. My advisor is Dr. Hongfeng Yu. My work focuses on volume rendering, machine learning, and data analytics.</p>
     
-    <p>Hi, I'm Max Nguyen, a Master's student in Computer Science at the University of Nebraska-Lincoln, working under the guidance of Dr. Hongfeng Yu. My work focuses on volume rendering, data science, and machine learning.</p>
-    
-    <h2>Summary of My Work</h2>
-    <p>I have diverse experience in data science and software development</p>
-    <p> Previous Interships: Meta Platforms (Facebook, 2022) and Elsa Speak (2021)</p>
+    <h3>Job Status</h3>
+    <p>I am looking for Data Science positions.</p>
 
     <h3>Key Highlights</h3>
     <ul>
         <li><strong>Master’s Research:</strong> <em>PixOrNet: Superpixel Learning for Fast Volume Visualization</em>, a novel method for fast volume visualization when users change the color and/or opacity transfer function. Submitted to IEEE TVCG and PacificVis 2025.</li>
-        <li><strong>Meta Internship:</strong> Achieved a 40% reduction in harmful content on Facebook through supervised machine learning models, improving system efficiency 10x.</li>
-        <li><strong>Elsa Internship:</strong> Improved user conversion rates and developed an anomalous behavior detection model to enhance account security and privacy.</li>
-        <li><strong>Undergraduate Research:</strong> Led a project distinguishing real and fake news through data mining and ensemble methods.</li>
-        <li><strong>Competitive Programming:</strong> Competed in the ACM-ICPC, earning second place overall at the regional level.</li>
+        <a href="assets/pdf/paper/PixOrNet_TVCG.pdf" target="_blank"><i class="fas fa-book"></i> PixOrNet Paper</a>
+        <li><strong>Meta Internship:</strong> Achieved a 40% reduction in harmful content on Facebook through supervised machine learning models. Improved filter efficiency by 10x. May-Aug 2022</li>
+        <li><strong>Elsa Speak Internship:</strong> Ran 4 A/B testing experiments. Improved user conversion rates from free to Pro users by 15%. Sept-Dec 2021</li>
+        <li><strong>Competitive Programming:</strong> Competed in ICPC, 2nd place at the regional level, 33rd place at North America Championship.</li>
+        <li><strong>Previous coursework:</strong> Computer Vision, Hardware-Software Acceleration for ML, Deep Learning & Assured Autonomy Analysis, Probability Theory, Linear Programming, Intro to Data Mining, Intro to Deep Learning, Stochastic Process.</li>
+        <li><strong>Teaching Assistant:</strong> Intro to AI, Calculus I</li>
+    </ul>
+
+    <h3><i class="fas fa-star"></i> Hobbies</h3>
+    <ul style="list-style-type: none; padding-left: 0; text-align: left;">
+        <li><i class="fas fa-chess"></i> <strong>Chess</strong>: chess, Chinese chess, and Shogi</li>
+        <li><i class="fas fa-running"></i> <strong>Sport</strong>: Track, Cross-country</li>
+        <li><i class="fas fa-book"></i> <strong>Manga Series</strong>: Tonikaku Kawaii</li>
+        <li><i class="fas fa-tv"></i> <strong>Anime Series</strong>: Tonikaku Kawaii, Otonari no Tenshi-sama, Detective Conan, Doraemon</li>
+        <li><i class="fas fa-gamepad"></i> <strong>Game</strong>: Genshin Impact (GI), Civilization, Millenia. Used to play Honkai Star Rail, Epic 7, Forge of Empires, Maplestory, Honkai Impact 3rd (HI3).</li>
+        <li><i class="fas fa-user-friends"></i> <strong>Favorite Characters</strong>: Furina, Navia from GI, Elysia from HI3, Tsukasa from Tonikaku Kawaii, Mahiru from Otonari no Tenshi-sama.</li>
+        <li><i class="fas fa-user-plus"></i><strong>Others</strong> : Cosplay, helping new players get used to games.</li>
     </ul>
     
-    <h2>Find Me Online</h2>
-    <a href="https://www.linkedin.com/in/maxnguyen16/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/MaxSally" target="_blank">GitHub</a>
-    <a href="mailto:maxnguyen1602@gmail.com" target="_blank">Email</a>
-    <a href="assets/pdf/resume.pdf" target="_blank">Resume (PDF)</a>
-    
-    <p>Feel free to explore my work and get in touch!</p>
+    <h3>Find Me Online</h3>
+    <a href="https://www.linkedin.com/in/maxnguyen16/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/MaxSally" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="mailto:maxnguyen1602@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="assets/pdf/resume.pdf" target="_blank">
+        <i class="fas fa-file-pdf"></i> Resume
+    </a>
+
+    <h3>Photos</h3>
+    <div class="image-container">
+        <figure>
+            <img src="assets/image/meta_escaperoom.jpg" width="200" height="150" alt="Escape Room">
+            <figcaption>Escape Room with Meta's Integrity Org</figcaption>
+        </figure>
+    </div>
+    <h4>MMCoder</h4>
+    <p>MMCoder is a short summer project that I led when I was in high school. The goal was to share ours passion of coding to other students.</p>
+    <div class="image-container">
+        <figure>
+            <img src="assets/image/Nha_Trang_with_all_students.JPG" width="200" height="150" alt="NT_Student">
+            <figcaption>With all students</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/image/Nha_Trang_with_faculty.JPG" width="200" height="150" alt="NT_Faculty">
+            <figcaption>With all faculty</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/image/project_news_report.JPG" width="150" height="200" alt="News Article">
+            <figcaption>News Article</figcaption>
+        </figure>
+    </div>
+
+    <p>Feel free to get in touch!</p>
 </body>
 </html>
